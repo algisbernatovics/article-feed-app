@@ -1,23 +1,60 @@
-<img src="prev0.png" alt="">
-<img src="prev1.png" alt="">
+# Article Feed App
 
+A custom PHP MVC-style article platform using routing, Twig templates, SQL data, and JSONPlaceholder-inspired content.
 
-This program works with api.
-https://jsonplaceholder.typicode.com/
+## Overview
 
-JSONPlaceholder is a free online REST API that you can use whenever you need some fake data.
+A custom PHP MVC-style article platform using routing, Twig templates, SQL data, and JSONPlaceholder-inspired content.
 
-## Getting started
+## Preview
 
-- download project
-- run `composer install` to get necessary packages
-- run `php -S localhost:7777` from public folder to start server
-- click on site that appears in terminal to open it in browser
-- have fun!
+![Article Feed preview](./prev0.png)
+![Article Feed detail preview](./prev1.png)
 
-The program is writed in PHP 7.4 and includes
+## Features
 
-"guzzlehttp/guzzle": "^7.5",
-"nikic/fast-route": "^1.3",
-"twig/twig": "^3.5",
-"ext-json": "*"
+- Article, user, and comment models.
+- Controllers for showing, adding, editing, and deleting articles/users/comments.
+- Twig-based views and FastRoute routing.
+- Database schema/sample SQL included.
+- Preview screenshots included.
+
+## Tech Stack
+
+- PHP
+- Composer
+- Guzzle
+- FastRoute
+- Twig
+- PHP-DI
+- Doctrine DBAL
+- Dotenv
+- SQL
+
+## Project Structure
+
+- `public_html/index.php` - front controller
+- `app/Controllers/` - HTTP controllers
+- `app/Models/` - article, user, and comment models
+- `app/Views/` - Twig templates
+- `homeNews.sql` - database dump/schema data
+
+## Getting Started
+
+Install dependencies and configure environment:
+
+```bash
+composer install
+cp .envExample .env
+```
+
+Serve the `public_html` entry point with your local PHP server or web server, and import `homeNews.sql` if database data is required.
+
+## Portfolio Notes
+
+- Demonstrates custom MVC architecture without Laravel.
+- Shows CRUD-style application structure, routing, templating, and persistence.
+
+## Status
+
+Portfolio-ready PHP web application.
